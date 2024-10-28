@@ -1,10 +1,10 @@
-import profile from '../../assets/images/profile.png'
+import { FaRegUserCircle } from "react-icons/fa";
 
 const Header = () => {
     return (
-        <div className='flex justify-between items-center max-w-7xl mx-auto border-b-2 p-4'>
-            <h1 className='text-3xl font-bold py-2'>Knowledge Cafe Recape</h1>
-            <img src={profile} alt="" />
+        <div className="flex justify-between items-center max-w-6xl mx-auto border-b-2 border-gray-400 p-4">
+            <h1 className="text-2xl font-medium">Knowledge Cafe</h1>
+            <p className="text-2xl"><FaRegUserCircle /></p>
         </div>
     );
 };
