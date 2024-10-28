@@ -1,13 +1,16 @@
-
-
+import PropTypes from 'prop-types';
 
 const Bookmarks = ({bookmarks}) => {
-    console.log(bookmarks)
+    
     return (
         <div>
-            <h2 className="text-xl font-medium">Bookmarks</h2>
+            <h2 className="text-xl font-medium">Bookmarked:{bookmarks.length}</h2>
         </div>
     );
 };
+
+Bookmarks. propTypes = {
+    bookmarks: PropTypes.array.isRequired
+}
 
 export default Bookmarks;
